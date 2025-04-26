@@ -9,5 +9,5 @@ Route::controller(ImageController::class)->group(function () {
     Route::get('images', 'getImage');
     Route::get('/images/{id}', 'getImageById');
     Route::post('/images/{id}', 'updateImageById');
-    Route::delete('/images/{id}', 'deleteImageById');
+    Route::delete('/images/{id}', 'deleteById');
 });

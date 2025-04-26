@@ -7,6 +7,8 @@ use Illuminate\Contracts\Cache\Store;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
+
 
 class ImageController extends Controller
 
@@ -88,6 +90,7 @@ class ImageController extends Controller
             return response()->json(['message' => 'Image not found'], 404);
         }
         if ($image->image_route && Storage::exists($image->image_route)) {
+            Log::info("Eliminando archivo: " . $image->image_route);
             Storage::delete($image->image_route);
         }
         $image->delete();
