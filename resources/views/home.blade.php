@@ -10,7 +10,7 @@
     <ul>
         @foreach ($imagenes as $image)
             <li>
-                <img src="{{ asset('storage/' . $image->path) }}" width="200">
+                <img src="{{ asset('storage/' . $image->image_route) }}" width="200">
             </li>
         @endforeach
     </ul>
