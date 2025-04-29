@@ -1,3 +1,5 @@
+import { defineConfig } from "vite"; // Necesario para la configuración de Vite
+import laravel from "laravel-vite-plugin";
 export default defineConfig({
     plugins: [
         vue(),
