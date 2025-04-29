@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Imágenes</title>
 </head>
-@vite(["resources/css/app.css"])
+@vite(["resources/css/app.scss"])
 <body>
     <h1>Galería de imágenes</h1>
 
